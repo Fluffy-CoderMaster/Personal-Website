@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Coding Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --text: #e5e5e5;
+      --accent: #00ffe1;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: #151922;
+      padding: 1.5em;
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    header h1 {
+      margin: 0;
+      color: var(--accent);
+      font-size: 2.5em;
+    }
+
+    nav {
+      margin-top: 1em;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin: 0 1em;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 1em;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.3em;
+    }
+
+    .project {
+      background: #1b1e2b;
+      padding: 1em;
+      margin-bottom: 1em;
+      border-left: 4px solid var(--accent);
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em;
+      font-size: 0.9em;
+      color: #888;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5em 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Coding Space</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm a passionate developer who loves building creative projects and learning new tech. This site is my digital playground to showcase things I’ve built or am working on.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>💡 Terminal Todo App</h3>
+      <p>A simple terminal-based todo app made with Python. It supports color tags and data persistence.</p>
+    </div>
+
+    <div class="project">
+      <h3>🌐 Personal Portfolio Website</h3>
+      <p>This very website, written in pure HTML and CSS to keep things minimal and focused.</p>
+    </div>
+
+    <div class="project">
+      <h3>📦 Inventory Bot (Discord)</h3>
+      <p>Wrote a bot that manages virtual inventory for users and handles trade logic using SQLite + Node.js.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to email me at <strong>clouwrend20@gmail.com</strong> or connect on GitHub or LinkedIn.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 My Coding Space | Built with ❤️ and HTML
+  </footer>
+</body>
+</html>
